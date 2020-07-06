@@ -23,7 +23,7 @@ class News
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=16000)
+     * @ORM\Column(type="text", length=16000)
      */
     private $content;
 
@@ -33,9 +33,14 @@ class News
     private $tags;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string", length=255)
      */
-    private $created_at;
+    private $link;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $author;
 
     public function getId(): ?int
     {
@@ -78,15 +83,28 @@ class News
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeInterface
+    public function getLink(): ?string
     {
-        return $this->created_at;
+        return $this->link;
     }
 
-    public function setCreatedAt(\DateTimeInterface $created_at): self
+    public function setLink(string $link): self
     {
-        $this->created_at = $created_at;
+        $this->link = $link;
 
         return $this;
     }
+
+    public function getAuthor(): ?string
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(string $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
 }

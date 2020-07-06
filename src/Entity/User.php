@@ -40,13 +40,19 @@ class User
     private $tag;
 
     /**
+     * @ORM\ManyToMany(targetEntity=Step::class)
+     */
+    private $step;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $gender;
+    private $name;
 
     public function __construct()
     {
         $this->tag = new ArrayCollection();
+        $this->step = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -116,14 +122,40 @@ class User
         return $this;
     }
 
-    public function getGender(): ?string
+    /**
+     * @return Collection|Step[]
+     */
+    public function getStep(): Collection
     {
-        return $this->gender;
+        return $this->step;
     }
 
-    public function setGender(string $gender): self
+    public function addStep(Step $step): self
     {
-        $this->gender = $gender;
+        if (!$this->step->contains($step)) {
+            $this->step[] = $step;
+        }
+
+        return $this;
+    }
+
+    public function removeStep(Step $step): self
+    {
+        if ($this->step->contains($step)) {
+            $this->step->removeElement($step);
+        }
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }
