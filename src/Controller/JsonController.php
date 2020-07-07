@@ -83,7 +83,6 @@ class JsonController extends AbstractController
            return new JsonResponse(['success' => 'no']);
         }
 
-        dump("HelloWorld");die();
         $user = new User();
 
         $user->setEmail($email);
@@ -97,6 +96,7 @@ class JsonController extends AbstractController
         $user->setCreatedAt($dt);
 
         $em->persist($user);
+        dump("HelloWorld");die();
         $em->flush();
 
        return new JsonResponse([
