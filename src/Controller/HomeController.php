@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(571);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(581);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(591);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(841);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(851);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(861);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(191);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(281);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(981);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(991);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1161);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1171);
 
         $chall = new Challenge();
 
-        $chall->setContent("La nourriture");
-        $chall->setToKnow("1,3 milliard de tonnes de nourritures sont jetées ou perdues chaque année dans le monde");
+        $chall->setContent("Arrêter de tout le temps remplacer");
+        $chall->setToKnow("2 à 4 ans d’usage pour une tablette ou un ordinateur améliore de 50% son bilan environnemental");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
