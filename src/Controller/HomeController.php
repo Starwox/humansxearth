@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(721);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(731);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(741);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(361);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(371);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(381);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(241);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(121);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(1081);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1091);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(841);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(851);
 
         $chall = new Challenge();
 
-        $chall->setContent("Eviter la pollution numérique");
-        $chall->setToKnow("Le secteur numérique est un grand consommateur de ressources naturelles non renouvelables");
+        $chall->setContent("Limiter sa consomation de viande");
+        $chall->setToKnow("Près de 20 % des émissions de gaz à effet de serre sont issus de l’élevage");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
