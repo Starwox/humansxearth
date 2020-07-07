@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(241);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(251);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(261);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(451);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(461);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(471);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(81);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(151);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(761);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(771);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(901);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(911);
 
         $chall = new Challenge();
 
-        $chall->setContent("Soyez créatif, faites du Upcycling !");
-        $chall->setToKnow("Donner une seconde vie aux objets est non seulement bénéfique pour l’environnement, mais est également un concept de création très apprécié par les artistes");
+        $chall->setContent("Nettoyez en respectant la planète");
+        $chall->setToKnow("Après usage, la plupart des produits d’entretien se retrouvent dans les eaux usées domestiques");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
