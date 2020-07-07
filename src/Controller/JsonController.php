@@ -123,13 +123,13 @@ class JsonController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy(['email' => $email]);
 
-        //$encoded = password_verify($password, $checker->getPassword());
+        //$encoded = password_verify($password, $checker[0]->getPassword());
 
 
         if (empty($checker)) {
             return new JsonResponse(["success" => "no"]);
         }
-        dump($checker);die();
+        dump($checker[0]);die();
 
         return new JsonResponse([
             'success' => 'yes',
