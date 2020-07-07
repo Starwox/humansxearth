@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(751);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(761);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(771);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(301);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(311);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(321);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(251);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(101);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(1101);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1111);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(801);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(811);
 
         $chall = new Challenge();
 
-        $chall->setContent("Au travail");
-        $chall->setToKnow("Seulement 35 % des entreprises recyclent le papier");
+        $chall->setContent("Faire du sport écolo");
+        $chall->setToKnow("Classiquement, les salles de sports sont extrêmement énergivores");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
