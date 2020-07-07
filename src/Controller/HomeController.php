@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(421);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(431);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(441);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(691);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(701);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(711);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(141);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(231);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(881);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(891);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1061);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1071);
 
         $chall = new Challenge();
 
-        $chall->setContent("Acheter local");
-        $chall->setToKnow("79 % des légumes bio parcourent moins de 160 km de la ferme à la table, 50% des produits animaux bio voyageraient sur plus de 800 km.");
+        $chall->setContent("Utiliser un composteur");
+        $chall->setToKnow("Le composte vous aide à réduire le volume de vos ordures ménagères de 60 %");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
