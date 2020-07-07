@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(811);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(821);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(831);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(601);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(611);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(621);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(271);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(201);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(1141);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1151);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1001);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1011);
 
         $chall = new Challenge();
 
-        $chall->setContent("Limiter le stockage de données");
-        $chall->setToKnow("Les Data Centers représentent à eux seuls 17% de l’empreinte carbone de la technologie");
+        $chall->setContent("Limites l’électricité");
+        $chall->setToKnow("En 2017 la france à émit 27.9 millions de tonnes de CO2 pour sa production électrique");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
