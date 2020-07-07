@@ -1,7 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="" />
+    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env 2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/starwox.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/humans_planets.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/phpunit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer 2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/debug.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/mailer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/twig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/dev/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/JsonController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Challenge.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/News.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Step.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tips.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JsonFile/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200625101816.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200625102344.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200625114613.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200625115009.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200626103739.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200629085736.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200629091336.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200630105541.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200630110018.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200630110059.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200702103258.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200702110040.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200702110205.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200702143100.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706073943.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706135303.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706135534.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706163603.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706205721.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706210141.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706211441.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706212850.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706215337.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200706232458.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ChallengeRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/NewsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StepRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TagRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TipsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQL/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony 2.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,24 +118,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="475">
+              <caret line="355" column="39" selection-start-line="355" selection-start-column="39" selection-end-line="355" selection-end-column="39" />
               <folding>
                 <element signature="e#119#144#0#PHP" expanded="true" />
-                <element signature="e#1572#46413#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="31" column="46" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="178" column="15" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="25" />
+            <state relative-caret-position="2569">
+              <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
               <folding>
                 <element signature="e#119#144#0#PHP" expanded="true" />
               </folding>
@@ -89,8 +201,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/Controller/JsonController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
       </list>
     </option>
   </component>
@@ -294,17 +406,18 @@
       <workItem from="1591871544251" duration="2853000" />
       <workItem from="1592813173873" duration="47427000" />
       <workItem from="1594144748176" duration="162000" />
-      <workItem from="1594145429372" duration="1502000" />
+      <workItem from="1594145429372" duration="1922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51973000" />
+    <option name="totallyTimeSpent" value="52393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16361417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16361417" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32923076" />
@@ -313,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25948718" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25948718" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -378,7 +491,6 @@
           <caret line="631" column="38" selection-start-line="631" selection-start-column="38" selection-end-line="631" selection-end-column="38" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -389,7 +501,6 @@
           <caret line="622" column="39" selection-start-line="622" selection-start-column="39" selection-end-line="622" selection-end-column="39" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -403,7 +514,6 @@
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -472,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8149">
           <caret line="458" selection-start-line="458" selection-end-line="458" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -554,17 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/News.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1325">
@@ -574,8 +666,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="178" column="15" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="25" />
+        <state relative-caret-position="2569">
+          <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+          <folding>
+            <element signature="e#119#144#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="355" column="39" selection-start-line="355" selection-start-column="39" selection-end-line="355" selection-end-column="39" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
           </folding>

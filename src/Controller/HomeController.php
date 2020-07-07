@@ -214,7 +214,7 @@ class HomeController extends AbstractController
 
 
 
-        $tagSDV = $repository->find(2);
+        $tagSDV = $repository->find(11);
 
         // Style de Vie 1
         $news13 = new News();
@@ -353,7 +353,7 @@ class HomeController extends AbstractController
         $entityManager->persist($news24);
 
 
-        $taghome = $repository->find(3);
+        $taghome = $repository->find(21);
 
 
         // A la maison 1
@@ -492,7 +492,7 @@ class HomeController extends AbstractController
 
 
 
-        $tagConso = $repository->find(4);
+        $tagConso = $repository->find(31);
 
         // Consommation 1
         $news37 = new News();
@@ -632,7 +632,7 @@ class HomeController extends AbstractController
 
 
 
-        $tagNum = $repository->find(5);
+        $tagNum = $repository->find(41);
 
         // Numérique 1
         $news49 = new News();
