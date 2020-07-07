@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(121);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(131);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(141);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(331);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(341);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(351);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(41);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(111);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(681);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(691);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(821);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(831);
 
         $chall = new Challenge();
 
-        $chall->setContent("Apprenez à bien recycler");
-        $chall->setToKnow("La France à pour objectif de recycler 50 % des déchets ménagers d’ici à 2020");
+        $chall->setContent("Faire la fête tout en restant écolo !");
+        $chall->setToKnow("Le festival We Love Green utilise 100% d’énergies renouvelables");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
