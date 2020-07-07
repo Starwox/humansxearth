@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(211);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(221);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(231);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(241);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(251);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(261);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(71);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(81);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(741);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(751);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(761);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(771);
 
         $chall = new Challenge();
 
-        $chall->setContent("S’habiller sans polluer");
-        $chall->setToKnow("Le textile est responsable de près de 4 % des émissions mondiales de gaz à effet de serre");
+        $chall->setContent("Soyez créatif, faites du Upcycling !");
+        $chall->setToKnow("Donner une seconde vie aux objets est non seulement bénéfique pour l’environnement, mais est également un concept de création très apprécié par les artistes");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
