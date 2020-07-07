@@ -86,11 +86,11 @@ class JsonController extends AbstractController
         $user = new User();
 
         $user->setEmail($email);
+        dump("HelloWorld");die();
         $encoded = $encoded = hash('sha256', $password);
         $user->setPassword($encoded);
 
         $user->setName($name);
-        dump("HelloWorld");die();
 
         $dt = new \DateTime('now');
         $dt->add(new \DateInterval('PT2H'));
