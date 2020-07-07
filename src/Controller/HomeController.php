@@ -26,16 +26,11 @@ class HomeController extends AbstractController
 
 
      /**
-      * @Route("/home")
+      * @Route("/")
       */
-    public function number(): JsonResponse
+    public function home(): Response
     {
-        // Exemple for Json Response
-        $json = file_get_contents("/Users/starwox/Desktop/humans_planets/src/JsonFile/example.json");
-        $data = json_decode($json, true);
-        echo uniqid();
-
-        return new JsonResponse($data);
+        return new Response("Hello World");
     }
 
     /**
