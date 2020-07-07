@@ -119,6 +119,8 @@ class JsonController extends AbstractController
         $password = $request->request->get('password');
         $encoded = $encoded = hash('sha256', $password);
 
+        dump($encoded);
+
 
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy([
