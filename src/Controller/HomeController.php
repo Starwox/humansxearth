@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(841);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(851);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(861);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(631);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(641);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(651);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(281);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(221);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(1161);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1171);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1021);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1031);
 
         $chall = new Challenge();
 
-        $chall->setContent("Arrêter de tout le temps remplacer");
-        $chall->setToKnow("2 à 4 ans d’usage pour une tablette ou un ordinateur améliore de 50% son bilan environnemental");
+        $chall->setContent("Se laver de manière écoresponsable !");
+        $chall->setToKnow("Un foyer composé de deux adultes et de deux enfants consomme 80 m3 d’eau par an.");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
