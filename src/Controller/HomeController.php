@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(361);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(371);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(381);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(391);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(401);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(411);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(121);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(131);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(841);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(851);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(861);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(871);
 
         $chall = new Challenge();
 
-        $chall->setContent("Limiter sa consomation de viande");
-        $chall->setToKnow("Près de 20 % des émissions de gaz à effet de serre sont issus de l’élevage");
+        $chall->setContent("Acheter des fruits et légumes de saisons");
+        $chall->setToKnow("Les produits de saison demandent moins de transports et pas de taxe d’importation, ce qui se répercute sur le prix");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
