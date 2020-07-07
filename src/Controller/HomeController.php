@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(151);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(161);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(171);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(571);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(581);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(591);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(51);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(191);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(701);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(711);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(981);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(991);
 
         $chall = new Challenge();
 
-        $chall->setContent("Dites stop aux cotton-tige!");
-        $chall->setToKnow("Chaque année on retrouve plus d'un million de tonnes  de cotons-tiges sur les plages ou dans les égouts");
+        $chall->setContent("La nourriture");
+        $chall->setToKnow("1,3 milliard de tonnes de nourritures sont jetées ou perdues chaque année dans le monde");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
