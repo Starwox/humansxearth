@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(511);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(521);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(531);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(91);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(101);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(111);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(171);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(31);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(941);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(951);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(661);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(671);
 
         $chall = new Challenge();
 
-        $chall->setContent("Limiter nos déchets lorsqu’on cuisine");
-        $chall->setToKnow("Chaque année, 90 milliards d’emballages alimentaires passent entre les mains des Français !");
+        $chall->setContent("Limite le papier !");
+        $chall->setToKnow("35 kilos de déchets par an sont évités en mettant l’autocollant Stop-Pub");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
