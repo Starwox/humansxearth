@@ -83,8 +83,8 @@ class JsonController extends AbstractController
            return new JsonResponse(['success' => 'no']);
         }
 
-        dump("HelloWorld");die();
         $user = new User();
+        dump("HelloWorld");die();
 
         $user->setEmail($email);
         $encoded = $encoded = hash('sha256', $password);
