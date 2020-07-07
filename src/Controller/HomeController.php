@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(541);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(551);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(561);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(721);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(731);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(741);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(181);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(241);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(961);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(971);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1081);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1091);
 
         $chall = new Challenge();
 
-        $chall->setContent("Le  chauffage");
-        $chall->setToKnow("On estime qu'en baissant le chauffage d'un degré on réalise une économie d'énergie de 7%");
+        $chall->setContent("Eviter la pollution numérique");
+        $chall->setToKnow("Le secteur numérique est un grand consommateur de ressources naturelles non renouvelables");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
