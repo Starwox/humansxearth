@@ -71,11 +71,11 @@ class JsonController extends AbstractController
     public function register(Request $request): JsonResponse
     {
 
-        dump("HelloWorld");die();
         $em = $this->getDoctrine()->getManager();
         $email = $request->request->get('email');
         $password = $request->request->get('password');
         $name = $request->request->get('name');
+        dump("HelloWorld");die();
 
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy(['email' => $email]);
