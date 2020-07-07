@@ -124,10 +124,10 @@ class JsonController extends AbstractController
             'email' => $email,
             ]);
         dump($checker);
-        $encoded = password_verify($password, $checker->getPassword());
+        //$encoded = password_verify($password, $checker->getPassword());
 
 
-        if ($encoded) {
+        if (empty($checker)) {
             return new JsonResponse(["success" => "no"]);
         }
 
