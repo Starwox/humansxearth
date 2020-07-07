@@ -66,7 +66,7 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/register", methods={"GET","HEAD"}))
+     * @Route("/json/register"))
      */
     public function register(Request $request): JsonResponse
     {
