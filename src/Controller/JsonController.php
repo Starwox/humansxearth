@@ -84,7 +84,6 @@ class JsonController extends AbstractController
         }
 
         $user = new User();
-        dump($email);die();
 
         $user->setEmail($email);
         $encoded = $encoded = hash('sha256', $password);
