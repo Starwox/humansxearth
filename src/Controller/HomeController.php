@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(61);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(71);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(81);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(421);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(431);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(441);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(21);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(141);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(641);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(651);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(881);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(891);
 
         $chall = new Challenge();
 
-        $chall->setContent("Ramasser des déchets");
-        $chall->setToKnow("Un automobiliste français sur trois reconnaît jeter ses déchets par la fenêtre de sa voiture");
+        $chall->setContent("Acheter local");
+        $chall->setToKnow("79 % des légumes bio parcourent moins de 160 km de la ferme à la table, 50% des produits animaux bio voyageraient sur plus de 800 km.");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
