@@ -75,7 +75,6 @@ class JsonController extends AbstractController
         $email = $request->request->get('email');
         $password = $request->request->get('password');
         $name = $request->request->get('name');
-        dump("HelloWorld");die();
 
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy(['email' => $email]);
@@ -84,6 +83,7 @@ class JsonController extends AbstractController
            return new JsonResponse(['success' => 'no']);
         }
 
+        dump("HelloWorld");die();
         $user = new User();
 
         $user->setEmail($email);
