@@ -121,17 +121,17 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="1611" column="75" selection-start-line="1611" selection-start-column="75" selection-end-line="1611" selection-end-column="75" />
+            <state relative-caret-position="-343">
+              <caret line="1225" selection-start-line="1225" selection-end-line="1225" />
               <folding>
                 <element signature="e#119#144#0#PHP" expanded="true" />
-                <element signature="e#1572#46413#0#PHP" />
-                <element signature="e#46458#47877#0#PHP" />
-                <element signature="e#51607#55701#0#PHP" />
-                <element signature="e#55762#59856#0#PHP" />
-                <element signature="e#59797#63878#0#PHP" />
-                <element signature="e#64200#68548#0#PHP" />
-                <element signature="e#68341#72420#0#PHP" />
+                <element signature="e#1572#46417#0#PHP" />
+                <element signature="e#46477#51538#0#PHP" />
+                <element signature="e#51603#55592#0#PHP" />
+                <element signature="e#55659#59740#0#PHP" />
+                <element signature="e#59808#64156#0#PHP" />
+                <element signature="e#64228#68307#0#PHP" />
+                <element signature="e#68376#72388#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -413,18 +413,18 @@
       <workItem from="1591871544251" duration="2853000" />
       <workItem from="1592813173873" duration="47427000" />
       <workItem from="1594144748176" duration="162000" />
-      <workItem from="1594145429372" duration="15382000" />
+      <workItem from="1594145429372" duration="15641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65853000" />
+    <option name="totallyTimeSpent" value="66112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16361417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16361417" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32923076" />
@@ -433,7 +433,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37025642" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37025642" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,7 +474,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -491,13 +491,13 @@
           <caret line="631" column="38" selection-start-line="631" selection-start-column="38" selection-end-line="631" selection-end-column="38" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
-            <element signature="e#46458#47877#0#PHP" />
-            <element signature="e#51607#55701#0#PHP" />
-            <element signature="e#55762#59856#0#PHP" />
-            <element signature="e#59797#63878#0#PHP" />
-            <element signature="e#64200#68548#0#PHP" />
-            <element signature="e#68341#72420#0#PHP" />
+            <element signature="e#1572#46417#0#PHP" />
+            <element signature="e#46477#51538#0#PHP" />
+            <element signature="e#51603#55592#0#PHP" />
+            <element signature="e#55659#59740#0#PHP" />
+            <element signature="e#59808#64156#0#PHP" />
+            <element signature="e#64228#68307#0#PHP" />
+            <element signature="e#68376#72388#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -508,13 +508,13 @@
           <caret line="622" column="39" selection-start-line="622" selection-start-column="39" selection-end-line="622" selection-end-column="39" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
-            <element signature="e#46458#47877#0#PHP" />
-            <element signature="e#51607#55701#0#PHP" />
-            <element signature="e#55762#59856#0#PHP" />
-            <element signature="e#59797#63878#0#PHP" />
-            <element signature="e#64200#68548#0#PHP" />
-            <element signature="e#68341#72420#0#PHP" />
+            <element signature="e#1572#46417#0#PHP" />
+            <element signature="e#46477#51538#0#PHP" />
+            <element signature="e#51603#55592#0#PHP" />
+            <element signature="e#55659#59740#0#PHP" />
+            <element signature="e#59808#64156#0#PHP" />
+            <element signature="e#64228#68307#0#PHP" />
+            <element signature="e#68376#72388#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -528,13 +528,13 @@
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
-            <element signature="e#46458#47877#0#PHP" />
-            <element signature="e#51607#55701#0#PHP" />
-            <element signature="e#55762#59856#0#PHP" />
-            <element signature="e#59797#63878#0#PHP" />
-            <element signature="e#64200#68548#0#PHP" />
-            <element signature="e#68341#72420#0#PHP" />
+            <element signature="e#1572#46417#0#PHP" />
+            <element signature="e#46477#51538#0#PHP" />
+            <element signature="e#51603#55592#0#PHP" />
+            <element signature="e#55659#59740#0#PHP" />
+            <element signature="e#59808#64156#0#PHP" />
+            <element signature="e#64228#68307#0#PHP" />
+            <element signature="e#68376#72388#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -678,17 +678,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/News.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1325">
           <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -704,17 +704,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1611" column="75" selection-start-line="1611" selection-start-column="75" selection-end-line="1611" selection-end-column="75" />
+        <state relative-caret-position="-343">
+          <caret line="1225" selection-start-line="1225" selection-end-line="1225" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
-            <element signature="e#1572#46413#0#PHP" />
-            <element signature="e#46458#47877#0#PHP" />
-            <element signature="e#51607#55701#0#PHP" />
-            <element signature="e#55762#59856#0#PHP" />
-            <element signature="e#59797#63878#0#PHP" />
-            <element signature="e#64200#68548#0#PHP" />
-            <element signature="e#68341#72420#0#PHP" />
+            <element signature="e#1572#46417#0#PHP" />
+            <element signature="e#46477#51538#0#PHP" />
+            <element signature="e#51603#55592#0#PHP" />
+            <element signature="e#55659#59740#0#PHP" />
+            <element signature="e#59808#64156#0#PHP" />
+            <element signature="e#64228#68307#0#PHP" />
+            <element signature="e#68376#72388#0#PHP" />
           </folding>
         </state>
       </provider>

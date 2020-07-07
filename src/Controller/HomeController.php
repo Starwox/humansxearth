@@ -174,7 +174,7 @@ class HomeController extends AbstractController
             Chaque année, les centaines d'alpinistes qui se pressent sur les flancs de l'Everest laissent derrière eux de nombreux déchets. Aujourd'hui, grâce aux efforts des autorités et bénévoles, plusieurs tonnes sont redescendues et recyclées.
         ");
         $news10->setTags($tagDechet);
-        $news10->setLink("https://www.sciencesetavenir.fr/nature-environnement/la-malaisie-renvoie-150-conteneurs-de-dechets-vers-plusieurs-pays-dont-la-france_140628");
+        $news10->setLink("https://www.sciencesetavenir.fr/nature-environnement/pollution/au-nepal-le-recyclage-des-dechets-de-l-everest_138409");
         $news10->setAuthor("Sciences et Avenir");
 
         // Dechets 11
@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(301);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(311);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(321);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(121);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(131);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(141);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(101);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(41);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(801);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(811);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(681);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(691);
 
         $chall = new Challenge();
 
-        $chall->setContent("Faire du sport écolo");
-        $chall->setToKnow("Classiquement, les salles de sports sont extrêmement énergivores");
+        $chall->setContent("Apprenez à bien recycler");
+        $chall->setToKnow("La France à pour objectif de recycler 50 % des déchets ménagers d’ici à 2020");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
