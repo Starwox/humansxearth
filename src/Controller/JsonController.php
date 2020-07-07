@@ -174,4 +174,42 @@ class JsonController extends AbstractController
         return new Response($data);
     }
 
+
+    /**
+     * @Route("/json/news")
+     */
+    public function news(): Response
+    {
+
+        $encoders = new JsonEncoder();
+
+        $repository = $this->getDoctrine()->getRepository(News::class);
+        $object = $repository->findAll();
+
+        $defaultContext = [
+            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
+                return $object;
+            },
+        ];
+
+        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
+
+        $serializer = new Serializer([$normalizer], [$encoders]);
+        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+            'id',
+            'name',
+            'tag' => [
+                'id',
+                'name'
+            ],
+            'content',
+            'link',
+            'author'
+        ]]);
+
+
+        return new Response($data);
+    }
+
+
 }
