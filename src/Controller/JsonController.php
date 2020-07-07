@@ -129,7 +129,14 @@ class JsonController extends AbstractController
             return new JsonResponse(["success" => "no"]);
         }
 
-        return new JsonResponse(["success" => "yes"]);
+        return new JsonResponse([
+            'success' => 'yes',
+            'id' => $checker->getId(),
+            'email' => $checker->getEmail(),
+            'password' => $password,
+            'name' => $checker->getName(),
+            'created_at' => $checker->getCreatedAt()
+        ]);
 
     }
 
