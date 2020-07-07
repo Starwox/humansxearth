@@ -123,9 +123,9 @@ class JsonController extends AbstractController
         $checker = $repo->findBy([
             'email' => $email,
             ]);
+        dump($checker);
         $encoded = password_verify($password, $checker->getPassword());
 
-        dump($checker);
 
         if ($encoded) {
             return new JsonResponse(["success" => "no"]);
