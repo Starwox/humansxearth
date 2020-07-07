@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(661);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(671);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(681);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(781);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(791);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(801);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(221);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(261);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(1041);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1051);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(1121);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(1131);
 
         $chall = new Challenge();
 
-        $chall->setContent("Doucement avec l’eau");
-        $chall->setToKnow("Un foyer composé de deux adultes et de deux enfants consomme 80 m3 d’eau par an.");
+        $chall->setContent("Limitez le streaming !");
+        $chall->setToKnow("Le numérique émet aujourd'hui 4% des gaz à effet de serre au niveau mondial");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
