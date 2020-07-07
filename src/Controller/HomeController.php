@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(181);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(191);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(201);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(211);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(221);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(231);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(61);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(71);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(721);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(731);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(741);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(751);
 
         $chall = new Challenge();
 
-        $chall->setContent("Se déplacer de manière écolo !");
-        $chall->setToKnow("À long terme le covoiturage permettrait une réduction de 25 % des émissions de CO2");
+        $chall->setContent("S’habiller sans polluer");
+        $chall->setToKnow("Le textile est responsable de près de 4 % des émissions mondiales de gaz à effet de serre");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
