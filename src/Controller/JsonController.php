@@ -90,13 +90,13 @@ class JsonController extends AbstractController
         $user->setPassword($encoded);
 
         $user->setName($name);
+        dump("HelloWorld");die();
 
         $dt = new \DateTime('now');
         $dt->add(new \DateInterval('PT2H'));
         $user->setCreatedAt($dt);
 
         $em->persist($user);
-        dump("HelloWorld");die();
         $em->flush();
 
        return new JsonResponse([
