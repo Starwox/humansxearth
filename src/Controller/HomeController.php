@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(481);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(491);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(501);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(181);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(191);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(201);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(161);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(61);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(921);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(931);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(721);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(731);
 
         $chall = new Challenge();
 
-        $chall->setContent("L’hygiène et la planète");
-        $chall->setToKnow("Le nombre de déchets générés par les lingettes s’élève à une dizaine de milliards en France");
+        $chall->setContent("Se déplacer de manière écolo !");
+        $chall->setToKnow("À long terme le covoiturage permettrait une réduction de 25 % des émissions de CO2");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
