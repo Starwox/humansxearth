@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="" />
+    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Controller/JsonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JsonController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +41,8 @@
       <file leaf-file-name="JsonController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="262">
+              <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
               <folding>
                 <element signature="e#119#144#0#PHP" expanded="true" />
               </folding>
@@ -303,15 +305,16 @@
       <workItem from="1591871544251" duration="2853000" />
       <workItem from="1592813173873" duration="47427000" />
       <workItem from="1594144748176" duration="162000" />
-      <workItem from="1594145429372" duration="3371000" />
+      <workItem from="1594145429372" duration="3641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53842000" />
+    <option name="totallyTimeSpent" value="54112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16361417" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -576,8 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="262">
+          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
           </folding>

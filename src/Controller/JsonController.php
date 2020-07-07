@@ -86,7 +86,7 @@ class JsonController extends AbstractController
         $user = new User();
 
         $user->setEmail($email);
-        $encoded = $encoded = hash('sha256', $password);
+        $encoded = hash('sha256', $password);
         $user->setPassword($encoded);
 
         $user->setName($name);
@@ -117,9 +117,7 @@ class JsonController extends AbstractController
     {
         $email = $request->request->get('email');
         $password = $request->request->get('password');
-        $encoded = $encoded = hash('sha256', $password);
-
-        dump($encoded);
+        $encoded = hash('sha256', $password);
 
 
         $repo = $this->getDoctrine()->getRepository(User::class);
@@ -127,6 +125,8 @@ class JsonController extends AbstractController
             'email' => $email,
             'password' => $encoded
             ]);
+
+        dump($checker);
 
         if (empty($checker)) {
             return new JsonResponse(["success" => "no"]);
