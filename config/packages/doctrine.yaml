@@ -1,4 +1,8 @@
 doctrine:
+    doctrine_migrations:
+        migrations_paths:
+          'DoctrineMigrations': '%kernel.project_dir%/src/Migrations'
+
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
 
