@@ -121,7 +121,7 @@ class JsonController extends AbstractController
         $email = $request->request->get('email');
         $password = $request->request->get('password');
 
-        $data = json_decode($request->getContent(), true);
+        $data = json_encode($request->getContent(), true);
 
             dump($request->getContent());
             dump($data);
