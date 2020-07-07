@@ -114,7 +114,7 @@ class JsonController extends AbstractController
 
     /**
      * @Route("/json/login")
-     * @Method({"POST", "HEAD"})
+     * @Method({"GET", "HEAD"})
      */
     public function login(Request $request): JsonResponse
     {
