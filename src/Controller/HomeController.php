@@ -1602,19 +1602,19 @@ class HomeController extends AbstractController
     public function challenge(): Response
     {
 
-        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(391);
-        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(401);
-        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(411);
+        $tips = $this->getDoctrine()->getRepository(Tips::class)->find(61);
+        $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(71);
+        $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(81);
 
-        $step = $this->getDoctrine()->getRepository(Step::class)->find(131);
+        $step = $this->getDoctrine()->getRepository(Step::class)->find(21);
 
-        $news = $this->getDoctrine()->getRepository(News::class)->find(861);
-        $news2 = $this->getDoctrine()->getRepository(News::class)->find(871);
+        $news = $this->getDoctrine()->getRepository(News::class)->find(641);
+        $news2 = $this->getDoctrine()->getRepository(News::class)->find(651);
 
         $chall = new Challenge();
 
-        $chall->setContent("Acheter des fruits et légumes de saisons");
-        $chall->setToKnow("Les produits de saison demandent moins de transports et pas de taxe d’importation, ce qui se répercute sur le prix");
+        $chall->setContent("Ramasser des déchets");
+        $chall->setToKnow("Un automobiliste français sur trois reconnaît jeter ses déchets par la fenêtre de sa voiture");
         $chall->setStep($step);
         $chall->addTip($tips);
         $chall->addTip($tips2);
