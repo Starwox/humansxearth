@@ -27,6 +27,8 @@ use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Validator\Constraints\Json;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+
 
 
 class JsonController extends AbstractController
@@ -111,7 +113,8 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/login", methods={"GET","POST"})
+     * @Route("/json/login")
+     * @Method({"POST", "HEAD"})
      */
     public function login(Request $request): JsonResponse
     {
