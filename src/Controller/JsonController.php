@@ -121,8 +121,9 @@ class JsonController extends AbstractController
         $email = $request->request->get('email');
         $password = $request->request->get('password');
 
-        dump($request->getContent());
+        $data = json_decode($request->getContent(), true);
 
+        dump($data);
 
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy([
