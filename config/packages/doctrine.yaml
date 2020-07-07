@@ -1,7 +1,4 @@
 doctrine:
-    doctrine_migrations:
-        migrations_paths:
-          'DoctrineMigrations': '%kernel.project_dir%/src/Migrations'
 
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
@@ -20,3 +17,8 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+
+
+doctrine_migrations:
+    migrations_paths:
+      'DoctrineMigrations': '%kernel.project_dir%/src/Migrations'
