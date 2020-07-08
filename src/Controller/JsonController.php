@@ -234,7 +234,7 @@ class JsonController extends AbstractController
 
         $object = $user->getStep()->getOwner();
 
-        dump($object);die();
+        dump($object->getStep());die();
 
 
 
