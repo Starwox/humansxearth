@@ -35,39 +35,6 @@ class JsonController extends AbstractController
 {
 
     /**
-     * @Route("/json/step")
-     */
-    public function step(): Response
-    {
-
-        $encoders = new JsonEncoder();
-
-        $repository = $this->getDoctrine()->getRepository(Step::class);
-        $object = $repository->findAll();
-
-        $defaultContext = [
-            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
-                return $object;
-            },
-        ];
-
-        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
-
-        $serializer = new Serializer([$normalizer], [$encoders]);
-        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
-            'id',
-            'name',
-            'tag' => [
-                'id',
-                'name'
-            ]
-        ]]);
-
-
-        return new Response($data);
-    }
-
-    /**
      * @Route("/json/register"))
      */
     public function register(Request $request): JsonResponse
@@ -260,6 +227,7 @@ class JsonController extends AbstractController
 
         $user = $repo->find($id);
 
+        dump($user);die();
 
         if (empty($user) OR empty($step))
             return new JsonResponse(["success" => "no"]);
@@ -267,7 +235,6 @@ class JsonController extends AbstractController
 
         $object = $user->getStep();
 
-        dump($object);
 
         $encoders = new JsonEncoder();
 
