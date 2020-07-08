@@ -248,7 +248,7 @@ class JsonController extends AbstractController
         $steprepo = $this->getDoctrine()->getRepository(Step::class);
 
 
-        $count = $steprepo->findAll();
+        $count = count($steprepo->findAll());
 
         dump($count);
 
