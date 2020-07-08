@@ -71,13 +71,15 @@ J'ai donc crée par la suite un nouveau Controller pour envoyer du JSON.
 
 **La suite :**
 
-J'aimerais remplacer le Controller insérant les datas par des [[Commandes](https://symfony.com/doc/current/console.html)] 
+J'aimerais remplacer le Controller insérant les datas par des [Commandes](https://symfony.com/doc/current/console.html) (Documentation Symfony)
 
 
 
 ## <a name="route"></a> Les routes de l'API (Exemple)
 
-[[Register](https://radiant-anchorage-47441.herokuapp.com/json/register)] Method: POST
+[Register](https://radiant-anchorage-47441.herokuapp.com/json/register) / Method: POST
+
+*Lien : https://radiant-anchorage-47441.herokuapp.com/json/register*
 
 **Datas:** "email" / "password" / "name"
 
@@ -96,7 +98,9 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
 }
 ```
 
-[[Login](https://radiant-anchorage-47441.herokuapp.com/json/login)] Method: POST
+[Login](https://radiant-anchorage-47441.herokuapp.com/json/login) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/login*
 
 **Datas:** "email" / "password"
 
@@ -115,7 +119,10 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
 }
 ```
 
-[[Challenge](https://radiant-anchorage-47441.herokuapp.com/json/challenge)] Method: GET
+[Challenge](https://radiant-anchorage-47441.herokuapp.com/json/challenge) / Method: GET
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge* 
+
 
 ```json
 {
@@ -159,7 +166,9 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
 }
 ```
 
-[[Tags & Steps](https://radiant-anchorage-47441.herokuapp.com/json/stepandtag)] Method: GET
+[Tags & Steps](https://radiant-anchorage-47441.herokuapp.com/json/stepandtag) / Method: GET
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/stepandtag*
 
 
 ```json
