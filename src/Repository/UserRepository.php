@@ -48,16 +48,22 @@ class UserRepository extends ServiceEntityRepository
     }
     */
 
-    public function findStepValid($value): ?User
+    /**
+     * @return User[]
+     */
+    public function findStepValid($id): ?User
     {
-        return $this->createQueryBuilder('u')
-            ->andWhere('u.id = :id')
-            ->innerJoin('u.step', 's')
-            ->setParameter('id', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-            ->getResult()
-            ;
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery(
+            "SELECT *
+                 FROM user_step us
+                 INNER JOIN step s ON s.id = us.step_id
+                 WHERE us.user_id = :id
+                "
+        )->setParameter('id', $id);
+
+        return $query->getResult();
     }
 
 }
