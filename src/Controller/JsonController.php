@@ -229,7 +229,7 @@ class JsonController extends AbstractController
 
 
 
-        if (empty($user))
+        if (empty($object))
             return new JsonResponse(["success" => "no"]);
 
 
@@ -250,6 +250,7 @@ class JsonController extends AbstractController
         $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
             'id'
         ]]);
+
 
         return new Response($data);
 
