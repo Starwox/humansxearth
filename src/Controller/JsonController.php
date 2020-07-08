@@ -233,8 +233,10 @@ class JsonController extends AbstractController
 
 
         $object = $user->getStep();
+        foreach ($object as $value) {
+        dump($value);die();
+        }
 
-        dump($user);die();
 
 
         $encoders = new JsonEncoder();
