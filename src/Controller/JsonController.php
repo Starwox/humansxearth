@@ -220,4 +220,75 @@ class JsonController extends AbstractController
     }
 
 
+    /**
+     * @Route("/json/challenge/setter")
+     */
+    public function validStep(Request $request): JsonResponse
+    {
+
+        $user_id = $request->request->get('user_id');
+        $step_id = $request->request->get('step_id');
+
+        $doctrine = $this->getDoctrine();
+
+        $user = $doctrine->getRepository(User::class)->find($user_id);
+        $step = $doctrine->getRepository(Step::class)->find($step_id);
+
+
+        if (empty($user) OR empty($step))
+            return new JsonResponse(["success" => "no"]);
+
+
+        $user->addStep($step);
+
+
+
+        return new JsonResponse([
+            "success" => "yes"
+        ]);
+    }
+
+    /**
+     * @Route("/json/challenge/getter")
+     */
+    public function getUserStep(Request $request): Response
+    {
+
+        $id = $request->request->get('user_id');
+
+        $repo = $this->getDoctrine()->getRepository(User::class);
+
+        $user = $repo->find($id);
+
+
+        if (empty($user) OR empty($step))
+            return new JsonResponse(["success" => "no"]);
+
+
+        $object = $user->getStep();
+
+        dump($object);
+
+        $encoders = new JsonEncoder();
+
+
+        $defaultContext = [
+            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
+                return $object;
+            },
+        ];
+
+        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
+
+        $serializer = new Serializer([$normalizer], [$encoders]);
+
+        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+            'id'
+        ]]);
+
+        return new Response($data);
+
+    }
+
+
 }

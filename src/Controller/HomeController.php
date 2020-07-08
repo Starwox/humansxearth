@@ -1597,11 +1597,11 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("/challenge")
+     * @Route("/generate/data/challenge")
      */
     public function challenge(): Response
     {
-
+        /*
         $tips = $this->getDoctrine()->getRepository(Tips::class)->find(781);
         $tips2 = $this->getDoctrine()->getRepository(Tips::class)->find(791);
         $tips3 = $this->getDoctrine()->getRepository(Tips::class)->find(801);
@@ -1625,7 +1625,8 @@ class HomeController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($chall);
         $entityManager->flush();
+        */
 
-        return new Response('Saved new challenge with id: '.$chall->getId());
+        return new Response("Hello World");
     }
 }
