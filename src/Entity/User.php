@@ -40,7 +40,7 @@ class User
     private $tag;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Step::class)
+     * @ORM\ManyToMany(targetEntity=Step::class, fetch="EAGER")
      */
     private $step;
 
