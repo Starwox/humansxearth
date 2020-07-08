@@ -228,7 +228,7 @@ class JsonController extends AbstractController
         $user = $repo->find($id);
 
 
-        if (empty($user) OR empty($step))
+        if (empty($user))
             return new JsonResponse(["success" => "no"]);
 
 
