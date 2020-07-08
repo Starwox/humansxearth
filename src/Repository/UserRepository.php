@@ -47,4 +47,17 @@ class UserRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findStepValid($value): ?User
+    {
+        return $this->createQueryBuilder('u')
+            ->andWhere('u.id = :id')
+            ->innerJoin('u.step', 's')
+            ->setParameter('id', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ->getResult()
+            ;
+    }
+
 }
