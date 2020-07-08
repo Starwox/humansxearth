@@ -205,7 +205,7 @@ class JsonController extends AbstractController
         if (empty($user) OR empty($step))
             return new JsonResponse(["success" => "no"]);
 
-
+        // foreach ($user->getStep() as $value)
         $user->addStep($step);
 
         $em->persist($user);
@@ -232,7 +232,11 @@ class JsonController extends AbstractController
         if (empty($object))
             return new JsonResponse(["success" => "no"]);
 
-        dump($object);
+         foreach ($object->getStep() as $value)
+            dump($value);
+
+         die();
+
 
 
         $encoders = new JsonEncoder();
