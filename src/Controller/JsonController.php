@@ -232,6 +232,8 @@ class JsonController extends AbstractController
         if (empty($object))
             return new JsonResponse(["success" => "no"]);
 
+        dump($object);
+
 
         $encoders = new JsonEncoder();
 
