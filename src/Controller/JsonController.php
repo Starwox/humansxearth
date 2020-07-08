@@ -282,7 +282,7 @@ class JsonController extends AbstractController
         ]]);
 
 
-        return new Response($data, $count);
+        return new Response([$data, $count]);
 
     }
 
