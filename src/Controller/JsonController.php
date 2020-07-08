@@ -223,7 +223,7 @@ class JsonController extends AbstractController
 
         $id = $request->request->get('user_id');
 
-        $repo = $this->getDoctrine()->getRepository(User::class)->findStepValid($id);
+        $repo = $this->getDoctrine()->getRepository(User::class)->find;
 
         dump($repo);die();
 
@@ -252,6 +252,39 @@ class JsonController extends AbstractController
 
         return new Response($data);
 
+    }
+
+    /**
+     * @Route("/json/stepandtag")
+     */
+    public function stepandtag(): Response
+    {
+
+        $encoders = new JsonEncoder();
+
+        $repository = $this->getDoctrine()->getRepository(Step::class);
+        $object = $repository->findAll();
+
+        $defaultContext = [
+            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
+                return $object;
+            },
+        ];
+
+        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
+
+        $serializer = new Serializer([$normalizer], [$encoders]);
+        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+            'id',
+            'name',
+            'tags' => [
+                'id',
+                'name'
+            ]
+        ]]);
+
+
+        return new Response($data);
     }
 
 
