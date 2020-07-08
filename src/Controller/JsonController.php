@@ -223,9 +223,9 @@ class JsonController extends AbstractController
 
         $id = $request->request->get('user_id');
 
-        $repo = $this->getDoctrine()->getRepository(User::class);
+        $repo = $this->getDoctrine()->getRepository(User::class)->findStepValid($id);
 
-        $object = $repo->findStepValid($id);
+        dump($repo);die();
 
 
         if (empty($user))
@@ -234,7 +234,6 @@ class JsonController extends AbstractController
 
         $encoders = new JsonEncoder();
 
-        dump($object);die();
 
 
         $defaultContext = [
