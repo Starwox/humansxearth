@@ -227,7 +227,6 @@ class JsonController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(User::class);
         $object = $repo->find($id);
 
-        dump($object);die();
 
 
         if (empty($user))
