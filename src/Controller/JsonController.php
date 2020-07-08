@@ -192,7 +192,7 @@ class JsonController extends AbstractController
      */
     public function validStep(Request $request): JsonResponse
     {
-
+        $em = $this->getDoctrine()->getManager();
         $user_id = $request->request->get('user_id');
         $step_id = $request->request->get('step_id');
 
@@ -208,7 +208,8 @@ class JsonController extends AbstractController
 
         $user->addStep($step);
 
-
+        $em->persist($user);
+        $em->flush();
 
         return new JsonResponse([
             "success" => "yes"
