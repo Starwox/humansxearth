@@ -278,10 +278,10 @@ class JsonController extends AbstractController
             'step' => [
                 'id',
                 'name'
-            ]
+            ],
+            'count' => $count
         ]]);
 
-        echo $count;
         return new Response($data);
 
     }
