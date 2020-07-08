@@ -227,15 +227,16 @@ class JsonController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(User::class);
         $object = $repo->find($id);
 
-
+        $stepValid = [];
 
         if (empty($object))
             return new JsonResponse(["success" => "no"]);
 
-         foreach ($object->getStep() as $value)
-            dump($value);
+         foreach ($object->getStep() as $value) {
+             array_push($stepValid, $value->getId());
+         }
 
-         die();
+         dump($stepValid);die();
 
 
 
