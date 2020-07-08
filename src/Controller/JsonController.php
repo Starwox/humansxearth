@@ -245,6 +245,10 @@ class JsonController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(User::class);
         $object = $repo->find($id);
 
+        $count = $repo->findAll();
+
+        dump($count);
+
         if (empty($object)) {
             return new JsonResponse([
                 "success" => "no",
@@ -291,6 +295,7 @@ class JsonController extends AbstractController
 
         $repository = $this->getDoctrine()->getRepository(Step::class);
         $object = $repository->findAll();
+
 
         $defaultContext = [
             AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
