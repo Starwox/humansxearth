@@ -186,7 +186,7 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 
 *Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter*
 
-Datas: user_id / step_id
+Datas: "user_id" / "step_id"
 
 ```json
 {
@@ -198,7 +198,7 @@ Datas: user_id / step_id
 
 *Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter*
 
-Datas: user_id
+Datas: "user_id"
 
 ```json
 {
