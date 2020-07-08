@@ -2,11 +2,24 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-## Lien
 
-[[Heroku](https://radiant-anchorage-47441.herokuapp.com/)]
+## Sommaire
 
-## Choix technique
+- [Lien](#lien)
+- [Choix Technique](#technical)
+- [Explications](#explain)
+- [Modèle Physique des Données](#mpd)
+- [API](#route)
+
+
+
+
+
+##<a name="link"></a> Lien
+
+[Heroku](https://radiant-anchorage-47441.herokuapp.com/)
+
+##<a name="technical"></a> Choix technique
 
 ### Serveur
 
@@ -25,7 +38,7 @@ ClearDB MYSQL (Heroku) / MySQL
 - Security
 
 
-## Explications
+##<a name="explain"></a> Explications
 
 ### 1) Heroku
 
@@ -42,7 +55,7 @@ J'ai choisi d'utiliser Apache, pour la documentation présente sur Heroku.
 J'ai donc crée mon .HTACCESS, ainsi que mon Procfile autour de celui-ci.
 
 
-### 3) Modèle Physique des Données
+###<a name="mpd"></a> 3) Modèle Physique des Données
 
 ![alt text](https://zupimages.net/up/20/28/uc09.png)
 
@@ -62,7 +75,7 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
 
 
 
-## Les routes de l'API (Exemple)
+##<a name="route"></a> Les routes de l'API (Exemple)
 
 [[Register](https://radiant-anchorage-47441.herokuapp.com/json/register)] Method: POST
 
@@ -143,5 +156,19 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
       "author"  : "Que Choisir"
     }
   ]
+}
+```
+
+[[Tags & Steps](https://radiant-anchorage-47441.herokuapp.com/json/stepandtag)] Method: GET
+
+
+```json
+{
+  "id":1,
+  "name":"La plage",
+  "tag": {
+    "id":1,
+    "name":"Déchets"
+  }
 }
 ```
