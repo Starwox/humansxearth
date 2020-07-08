@@ -250,8 +250,6 @@ class JsonController extends AbstractController
 
         $count = count($steprepo->findAll());
 
-        dump($count);
-
         if (empty($object)) {
             return new JsonResponse([
                 "success" => "no",
@@ -284,7 +282,7 @@ class JsonController extends AbstractController
         ]]);
 
 
-        return new Response($data);
+        return new Response($data, $count);
 
     }
 
