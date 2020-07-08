@@ -15,11 +15,11 @@
 
 
 
-##<a name="link"></a> Lien
+## <a name="link"></a> Lien
 
 [Heroku](https://radiant-anchorage-47441.herokuapp.com/)
 
-##<a name="technical"></a> Choix technique
+## <a name="technical"></a> Choix technique
 
 ### Serveur
 
@@ -38,7 +38,7 @@ ClearDB MYSQL (Heroku) / MySQL
 - Security
 
 
-##<a name="explain"></a> Explications
+## <a name="explain"></a> Explications
 
 ### 1) Heroku
 
@@ -55,7 +55,7 @@ J'ai choisi d'utiliser Apache, pour la documentation présente sur Heroku.
 J'ai donc crée mon .HTACCESS, ainsi que mon Procfile autour de celui-ci.
 
 
-###<a name="mpd"></a> 3) Modèle Physique des Données
+### <a name="mpd"></a> 3) Modèle Physique des Données
 
 ![alt text](https://zupimages.net/up/20/28/uc09.png)
 
@@ -75,7 +75,7 @@ J'aimerais remplacer le Controller insérant les datas par des [[Commandes](http
 
 
 
-##<a name="route"></a> Les routes de l'API (Exemple)
+## <a name="route"></a> Les routes de l'API (Exemple)
 
 [[Register](https://radiant-anchorage-47441.herokuapp.com/json/register)] Method: POST
 
