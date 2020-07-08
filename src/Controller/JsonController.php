@@ -250,7 +250,9 @@ class JsonController extends AbstractController
         $serializer = new Serializer([$normalizer], [$encoders]);
 
         $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
-            'id'
+            'id',
+            'email',
+            'step'
         ]]);
 
 
