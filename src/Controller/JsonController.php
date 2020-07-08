@@ -232,10 +232,9 @@ class JsonController extends AbstractController
             return new JsonResponse(["success" => "no"]);
 
 
-        $object = $user->getStep();
-        foreach ($object as $value) {
-        dump($value);die();
-        }
+        $object = $user->getStep()->first();
+
+        dump($object);die();
 
 
 
