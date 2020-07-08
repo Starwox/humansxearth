@@ -202,10 +202,28 @@ class JsonController extends AbstractController
         $step = $doctrine->getRepository(Step::class)->find($step_id);
 
 
-        if (empty($user) OR empty($step))
-            return new JsonResponse(["success" => "no"]);
 
-        // foreach ($user->getStep() as $value)
+        if (empty($user) OR empty($step)) {
+            return new JsonResponse([
+                "success" => "no",
+                "reason" => "User or Step doesn't match"
+            ]);
+        }
+
+        $stepValid = [];
+
+        foreach ($user->getStep() as $value) {
+            array_push($stepValid, $value->getId());
+        }
+
+        if (in_array($stepValid)) {
+            return new JsonResponse([
+                "success" => "no",
+                "reason" => "Already Exist"
+
+            ]);
+        }
+
         $user->addStep($step);
 
         $em->persist($user);
@@ -227,17 +245,12 @@ class JsonController extends AbstractController
         $repo = $this->getDoctrine()->getRepository(User::class);
         $object = $repo->find($id);
 
-        $stepValid = [];
-
-        if (empty($object))
-            return new JsonResponse(["success" => "no"]);
-
-         foreach ($object->getStep() as $value) {
-             array_push($stepValid, $value->getId());
-         }
-
-         dump($stepValid);die();
-
+        if (empty($object)) {
+            return new JsonResponse([
+                "success" => "no",
+                "reason" => "User doesn't match"
+            ]);
+        }
 
 
         $encoders = new JsonEncoder();
