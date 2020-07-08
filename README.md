@@ -173,11 +173,43 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 
 ```json
 {
-  "id":1,
-  "name":"La plage",
-  "tag": {
-    "id":1,
-    "name":"Déchets"
+  "id"      : 1,
+  "name"    : "La plage",
+  "tag"     : {
+    "id"    : 1,
+    "name"  : "Déchets"
   }
+}
+```
+
+[Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: GET
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter*
+
+
+```json
+{
+  "success"      : "yes"
+}
+```
+
+[Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: GET
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter*
+
+
+```json
+{
+"id"      : 51,
+"email"   : "admin4@gmail.com",
+"step"    : [
+  {
+    "id"  : 11,
+    "name": "Les emballages"
+  },
+  {
+    "id"  : 91,
+    "name": "La soif"
+  }]
 }
 ```
