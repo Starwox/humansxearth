@@ -396,8 +396,6 @@ class JsonController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
         $object = $repository->find($id);
 
-        dump($object);die();
-
         $defaultContext = [
             AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
                 return $object;
