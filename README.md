@@ -77,6 +77,9 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 
 ## <a name="route"></a> Les routes de l'API (Exemple)
 
+
+Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre appel AJAX
+
 [Register](https://radiant-anchorage-47441.herokuapp.com/json/register) / Method: POST
 
 *Lien : https://radiant-anchorage-47441.herokuapp.com/json/register*
@@ -97,6 +100,8 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
     }
 }
 ```
+ 
+===
 
 [Login](https://radiant-anchorage-47441.herokuapp.com/json/login) / Method: POST
 
@@ -118,6 +123,8 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
     }
 }
 ```
+ 
+===
 
 [Challenge](https://radiant-anchorage-47441.herokuapp.com/json/challenge) / Method: GET
 
@@ -165,6 +172,8 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
   ]
 }
 ```
+ 
+===
 
 [Tags & Steps](https://radiant-anchorage-47441.herokuapp.com/json/stepandtag) / Method: GET
 
@@ -181,6 +190,8 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
   }
 }
 ```
+ 
+===
 
 [Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: POST
 
@@ -193,6 +204,8 @@ Datas: "user_id" / "step_id"
   "success"      : "yes"
 }
 ```
+ 
+===
 
 [Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: POST
 
