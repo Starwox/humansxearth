@@ -214,15 +214,15 @@ class JsonController extends AbstractController
 
         foreach ($user->getStep() as $value) {
             array_push($stepValid, $value->getId());
+            if (in_array($stepValid, $value->getId(), true)) {
+                return new JsonResponse([
+                    "success" => "no",
+                    "reason" => "Already Exist"
+
+                ]);
+            }
         }
 
-        if (in_array($stepValid)) {
-            return new JsonResponse([
-                "success" => "no",
-                "reason" => "Already Exist"
-
-            ]);
-        }
 
         $user->addStep($step);
 
