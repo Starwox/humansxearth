@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="" />
+    <list default="true" id="7cbcb23e-b28e-4207-b66b-baa1ef47e332" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Controller/JsonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JsonController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="246" column="54" selection-start-line="246" selection-start-column="54" selection-end-line="246" selection-end-column="54" />
+              <caret line="246" column="65" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
               <folding>
                 <element signature="e#119#144#0#PHP" expanded="true" />
               </folding>
@@ -381,12 +383,12 @@
       <workItem from="1592813173873" duration="47427000" />
       <workItem from="1594144748176" duration="162000" />
       <workItem from="1594145429372" duration="17578000" />
-      <workItem from="1594191437239" duration="18318000" />
+      <workItem from="1594191437239" duration="18563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86367000" />
+    <option name="totallyTimeSpent" value="86612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -783,7 +785,7 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/JsonController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="246" column="54" selection-start-line="246" selection-start-column="54" selection-end-line="246" selection-end-column="54" />
+          <caret line="246" column="65" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
           <folding>
             <element signature="e#119#144#0#PHP" expanded="true" />
           </folding>

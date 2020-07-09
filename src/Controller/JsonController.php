@@ -244,7 +244,12 @@ class JsonController extends AbstractController
 
         $id = $request->request->get('user_id');
 
-        dump(json_decode(file_get_contents("php://input"), true));die();
+        if (empty($id)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $id = $jsonId['user_id'];
+            dump($id);die();
+        }
 
         $repo = $this->getDoctrine()->getRepository(User::class);
         $object = $repo->find($id);
