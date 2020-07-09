@@ -231,6 +231,21 @@ class JsonController extends AbstractController
         $user_id = $request->request->get('user_id');
         $step_id = $request->request->get('step_id');
 
+        // Check if $user_id is defined
+        if (empty($user_id)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $user_id = $jsonId['user_id'];
+        }
+
+        // Check if $step_id is defined
+        if (empty($step_id)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $step_id = $jsonId['step_id'];
+        }
+
+
         $doctrine = $this->getDoctrine();
 
         $user = $doctrine->getRepository(User::class)->find($user_id);
