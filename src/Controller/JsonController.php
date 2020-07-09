@@ -214,6 +214,7 @@ class JsonController extends AbstractController
 
         foreach ($user->getStep() as $value) {
             array_push($stepValid, $value->getId());
+
             if (in_array($stepValid, $value->getId(), true)) {
                 return new JsonResponse([
                     "success" => "no",
@@ -223,6 +224,7 @@ class JsonController extends AbstractController
             }
         }
 
+            dump($stepValid);
 
         $user->addStep($step);
 
