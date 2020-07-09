@@ -182,7 +182,7 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 }
 ```
 
-[Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: GET
+[Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: POST
 
 *Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter*
 
@@ -194,7 +194,7 @@ Datas: "user_id" / "step_id"
 }
 ```
 
-[Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: GET
+[Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: POST
 
 *Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter*
 
