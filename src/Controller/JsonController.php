@@ -45,6 +45,27 @@ class JsonController extends AbstractController
         $password = $request->request->get('password');
         $name = $request->request->get('name');
 
+        // Check if Email was send as JSON
+        if (empty($email)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $email = $jsonId['email'];
+        }
+
+        // Check if password was send as JSON
+        if (empty($password)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $password = $jsonId['password'];
+        }
+
+        // Check if name was send as JSON
+        if (empty($name)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $name = $jsonId['name'];
+        }
+
         $repo = $this->getDoctrine()->getRepository(User::class);
         $checker = $repo->findBy(['email' => $email]);
 
