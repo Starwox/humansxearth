@@ -417,4 +417,46 @@ class JsonController extends AbstractController
 
         return new Response($data);
     }
+
+
+    /**
+     * @Route("/json/test", methods={"POST","HEAD"})
+     */
+    public function testuser(Request $request): Response
+    {
+
+        $id = $request->request->get('user_id');
+
+        if (empty($id)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $id = $jsonId['user_id'];
+        }
+
+        $encoders = new JsonEncoder();
+
+        $repository = $this->getDoctrine()->getRepository(User::class);
+        $object = $repository->find($id);
+
+        $defaultContext = [
+            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
+                return $object;
+            },
+        ];
+
+        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
+
+        $serializer = new Serializer([$normalizer], [$encoders]);
+        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+            'id',
+            'email',
+            'name',
+            'created_at' => [
+                'date'
+            ]
+        ]]);
+
+
+        return new Response($data);
+    }
 }
