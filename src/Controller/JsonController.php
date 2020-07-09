@@ -316,15 +316,7 @@ class JsonController extends AbstractController
         ]]);
 
 
-        return new Response($data, 204, [
-            'Access-Control-Allow-Origin' => '*',
-            'Access-Control-Allow-Credentials' => 'true',
-            'Access-Control-Allow-Methods' => 'POST',
-            'Access-Control-Allow-Headers' => 'DNT, X-User-Token, Keep-Alive, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type',
-            'Access-Control-Max-Age' => 1728000,
-            'Content-Type' => 'text/plain charset=UTF-8',
-            'Content-Length' => 0
-        ]);
+        return new Response($data);
     }
 
 
