@@ -409,7 +409,9 @@ class JsonController extends AbstractController
             'id',
             'email',
             'name',
-            'created_at'
+            'created_at' => [
+                'date'
+            ]
         ]]);
 
 
