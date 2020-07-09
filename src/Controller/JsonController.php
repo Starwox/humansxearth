@@ -136,7 +136,6 @@ class JsonController extends AbstractController
             'success' => 'yes',
             'id' => $checker[0]->getId(),
             'email' => $checker[0]->getEmail(),
-            'password' => $password,
             'name' => $checker[0]->getName(),
             'created_at' => $checker[0]->getCreatedAt()
         ]);
