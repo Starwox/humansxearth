@@ -228,3 +228,23 @@ Datas: "user_id"
   }]
 }
 ```
+
+
+-----
+
+[Get User by ID](https://radiant-anchorage-47441.herokuapp.com/json/user) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/user*
+
+Datas: "user_id"
+
+```json
+[{
+"id"      : 51,
+"email"   : "admin4@gmail.com",
+"name" : "Test admin"
+},
+"2020-07-07-21-16-12"
+]
+```
+
