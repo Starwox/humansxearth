@@ -438,7 +438,7 @@ class JsonController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
         $object = $repository->find($id);
 
-        $dt = $object->getCreatedAt()->format();
+        $dt = $object->getCreatedAt()->format('Y-m-d-H-i-s');
 
         dump($dt);die();
 
