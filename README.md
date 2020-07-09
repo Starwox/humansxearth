@@ -100,8 +100,8 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
     }
 }
 ```
- 
-===
+  
+-----
 
 [Login](https://radiant-anchorage-47441.herokuapp.com/json/login) / Method: POST
 
@@ -124,7 +124,7 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
 }
 ```
  
-===
+-----
 
 [Challenge](https://radiant-anchorage-47441.herokuapp.com/json/challenge) / Method: GET
 
@@ -173,7 +173,7 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
 }
 ```
  
-===
+-----
 
 [Tags & Steps](https://radiant-anchorage-47441.herokuapp.com/json/stepandtag) / Method: GET
 
@@ -191,7 +191,7 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
 }
 ```
  
-===
+-----
 
 [Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: POST
 
@@ -205,7 +205,7 @@ Datas: "user_id" / "step_id"
 }
 ```
  
-===
+-----
 
 [Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: POST
 
