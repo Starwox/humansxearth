@@ -94,7 +94,7 @@ class JsonController extends AbstractController
            'email' => $user->getEmail(),
            'password' => $password,
            'name' => $user->getName(),
-           'created_at' => $user->getCreatedAt()
+           'created_at' => $user->getCreatedAt()->format('Y-m-d-H-i-s')
 
        ]);
 
@@ -137,7 +137,7 @@ class JsonController extends AbstractController
             'id' => $checker[0]->getId(),
             'email' => $checker[0]->getEmail(),
             'name' => $checker[0]->getName(),
-            'created_at' => $checker[0]->getCreatedAt()
+            'created_at' => $checker[0]->getCreatedAt()->format('Y-m-d-H-i-s')
         ]);
 
     }
@@ -396,6 +396,9 @@ class JsonController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
         $object = $repository->find($id);
 
+        $dt = $object->getCreatedAt()->format('Y-m-d-H-i-s');
+
+
         $defaultContext = [
             AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
                 return $object;
@@ -405,13 +408,10 @@ class JsonController extends AbstractController
         $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
 
         $serializer = new Serializer([$normalizer], [$encoders]);
-        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+        $data = $serializer->serialize([$object, $dt], 'json', [AbstractNormalizer::ATTRIBUTES => [
             'id',
             'email',
-            'name',
-            'created_at' => [
-                'date'
-            ]
+            'name'
         ]]);
 
 
@@ -440,8 +440,6 @@ class JsonController extends AbstractController
 
         $dt = $object->getCreatedAt()->format('Y-m-d-H-i-s');
 
-        dump($dt);die();
-
         $defaultContext = [
             AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
                 return $object;
@@ -451,13 +449,10 @@ class JsonController extends AbstractController
         $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
 
         $serializer = new Serializer([$normalizer], [$encoders]);
-        $data = $serializer->serialize($object, 'json', [AbstractNormalizer::ATTRIBUTES => [
+        $data = $serializer->serialize([$object, $dt], 'json', [AbstractNormalizer::ATTRIBUTES => [
             'id',
             'email',
-            'name',
-            'created_at' => [
-                'date'
-            ]
+            'name'
         ]]);
 
 
