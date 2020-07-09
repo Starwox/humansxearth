@@ -35,7 +35,7 @@ class JsonController extends AbstractController
 {
 
     /**
-     * @Route("/json/register"))
+     * @Route("/json/register", methods={"POST","HEAD"})
      */
     public function register(Request $request): JsonResponse
     {
@@ -80,7 +80,7 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/login")
+     * @Route("/json/login", methods={"POST","HEAD"})
      */
     public function login(Request $request): JsonResponse
     {
@@ -109,7 +109,7 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/challenge")
+     * @Route("/json/challenge", methods={"GET","HEAD"})
      */
     public function challenge(Request $request): Response
     {
@@ -151,7 +151,7 @@ class JsonController extends AbstractController
 
 
     /**
-     * @Route("/json/news")
+     * @Route("/json/news", methods={"GET","HEAD"})
      */
     public function news(): Response
     {
@@ -188,7 +188,7 @@ class JsonController extends AbstractController
 
 
     /**
-     * @Route("/json/challenge/setter")
+     * @Route("/json/challenge/setter", methods={"POST","HEAD"})
      */
     public function validStep(Request $request): JsonResponse
     {
@@ -235,7 +235,7 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/challenge/getter")
+     * @Route("/json/challenge/getter", methods={"POST","HEAD"})
      */
     public function getUserStep(Request $request): Response
     {
@@ -286,7 +286,7 @@ class JsonController extends AbstractController
     }
 
     /**
-     * @Route("/json/stepandtag")
+     * @Route("/json/stepandtag", methods={"GET","HEAD"})
      */
     public function stepandtag(): Response
     {
