@@ -265,7 +265,7 @@ class JsonController extends AbstractController
         }
 
 
-        if (in_array($step_id, $stepValid, true)) {
+        if (in_array($step_id, $stepValid)) {
             return new JsonResponse([
                 "success" => "no",
                 "reason" => "Already set"
