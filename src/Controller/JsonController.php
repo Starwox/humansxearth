@@ -92,7 +92,6 @@ class JsonController extends AbstractController
            'success' => 'yes',
            'id' => $user->getId(),
            'email' => $user->getEmail(),
-           'password' => $password,
            'name' => $user->getName(),
            'created_at' => $user->getCreatedAt()->format('Y-m-d-H-i-s')
 
