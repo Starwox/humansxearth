@@ -263,7 +263,7 @@ class JsonController extends AbstractController
         foreach ($user->getStep() as $value) {
             array_push($stepValid, $value->getId());
 
-            dump(in_array($stepValid, $value->getId()));
+            dump(in_array($stepValid, $value->getId(), false));
 
             if (in_array($stepValid, $value->getId())) {
                 return new JsonResponse([
