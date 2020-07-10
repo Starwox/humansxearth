@@ -378,7 +378,7 @@ class JsonController extends AbstractController
     /**
      * @Route("/json/user", methods={"POST","HEAD"})
      */
-    public function getUser(Request $request): Response
+    public function getUserbyId(Request $request): ?Response
     {
 
         $id = $request->request->get('user_id');
