@@ -264,13 +264,13 @@ class JsonController extends AbstractController
             array_push($stepValid, $value->getId());
 
             dump(in_array($value->getId(), $stepValid, false));
-
+            /*
             if (in_array($value->getId(), $stepValid, true)) {
                 return new JsonResponse([
                     "success" => "no",
                     "reason" => "Already set"
                 ]);
-            }
+            }*/
         }
 
         $user->addStep($step);
