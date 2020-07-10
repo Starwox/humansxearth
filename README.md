@@ -77,6 +77,7 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 
 ## <a name="route"></a> Les routes de l'API (Exemple)
 
+###  Success Call
 
 Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre appel AJAX
 
@@ -89,9 +90,9 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
 ```json
 {
     "success"           : "yes",
-    "id"                : 41,
-    "email"             : "admin3@gmail.com",
-    "name"              : "Test admin",
+    "id"                : 1,
+    "email"             : "exemple@gmail.com",
+    "name"              : "Exemple name",
     "created_at"        : "2020-07-07-22:06:06"
 }
 ```
@@ -107,15 +108,10 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
 ```json
 {
     "success"           : "yes",
-    "id"                : 41,
-    "email"             : "admin3@gmail.com",
-    "password"          : "betatester",
-    "name"              : "Test admin",
-    "created_at"        : {
-        "date"          : "2020-07-07 22:06:06.817863",
-        "timezone_type" : 3,
-        "timezone"      : "UTC"
-    }
+    "id"                : 31,
+    "email"             : "exemple@gmail.com",
+    "name"              : "Exemple name",
+    "created_at"        : "2020-07-07 22:06:06"
 }
 ```
  
@@ -211,7 +207,8 @@ Datas: "user_id"
 ```json
 {
 "id"      : 51,
-"email"   : "admin4@gmail.com",
+"email"   : "exemple@gmail.com",
+"name"    : "Exemple nom",
 "step"    : [
   {
     "id"  : 11,
@@ -242,4 +239,64 @@ Datas: "user_id"
 "2020-07-07-21-16-12"
 ]
 ```
+ 
+-----
+
+### Error Call
+
+
+[Register](https://radiant-anchorage-47441.herokuapp.com/json/register) / Method: POST
+
+*Lien : https://radiant-anchorage-47441.herokuapp.com/json/register*
+
+```json
+{
+    "success"           : "no"
+}
+```
+
+Cela signifie qu'un utilisateur existe déjà.
+ 
+-----
+
+[Login](https://radiant-anchorage-47441.herokuapp.com/json/login) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/login*
+
+```json
+{
+    "success"           : "no"
+}
+```
+
+Cela signifie que l'utilisateur n'a pas été trouvé et/ou que le mot de passe ne corresponds pas.
+
+ 
+-----
+
+[Add Step for User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/setter*
+
+- 1er cas
+
+```json
+{
+  "success"      : "no",
+  "reason"       : "User or Step doesn't match"
+}
+```
+
+Cela signifie que l'ID User et/ou l'ID Step n'ont pas été trouvé(s).
+
+- 2ème cas
+
+```json
+{
+  "success"      : "no",
+  "reason"       : "Already set"
+}
+```
+
+Cela signifie que l'ID User et l'ID Step à déjà été implementé.
 

@@ -93,7 +93,7 @@ class JsonController extends AbstractController
            'id' => $user->getId(),
            'email' => $user->getEmail(),
            'name' => $user->getName(),
-           'created_at' => $user->getCreatedAt()->format('Y-m-d-H-i-s')
+           'created_at' => $user->getCreatedAt()->format('Y-m-d H:i:s')
 
        ]);
 
@@ -136,7 +136,7 @@ class JsonController extends AbstractController
             'id' => $checker[0]->getId(),
             'email' => $checker[0]->getEmail(),
             'name' => $checker[0]->getName(),
-            'created_at' => $checker[0]->getCreatedAt()->format('Y-m-d-H-i-s')
+            'created_at' => $checker[0]->getCreatedAt()->format('Y-m-d H:i:s')
         ]);
 
     }
@@ -263,16 +263,13 @@ class JsonController extends AbstractController
         foreach ($user->getStep() as $value) {
             array_push($stepValid, $value->getId());
 
-            if (in_array($stepValid, $value->getId(), true)) {
+            if (in_array($stepValid, $value->getId())) {
                 return new JsonResponse([
                     "success" => "no",
-                    "reason" => "Already Exist"
-
+                    "reason" => "Already set"
                 ]);
             }
         }
-
-            dump($stepValid);
 
         $user->addStep($step);
 
@@ -396,7 +393,7 @@ class JsonController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
         $object = $repository->find($id);
 
-        $dt = $object->getCreatedAt()->format('Y-m-d-H-i-s');
+        $dt = $object->getCreatedAt()->format('Y-m-d H:i:s');
 
 
         $defaultContext = [
