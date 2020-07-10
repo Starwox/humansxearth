@@ -425,42 +425,13 @@ class JsonController extends AbstractController
 
 
     /**
-     * @Route("/json/test", methods={"POST","HEAD"})
+     * @Route("/json/test", methods={"GET","HEAD"})
      */
-    public function testuser(Request $request): Response
+    public function testAPI(Request $request): JsonResponse
     {
 
-        $id = $request->request->get('user_id');
-
-        if (empty($id)) {
-            $jsonId = json_decode(file_get_contents("php://input"), true);
-
-            $id = $jsonId['user_id'];
-        }
-
-        $encoders = new JsonEncoder();
-
-        $repository = $this->getDoctrine()->getRepository(User::class);
-        $object = $repository->find($id);
-
-        $dt = $object->getCreatedAt()->format('Y-m-d H:i:s');
-
-        $defaultContext = [
-            AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object, $format, $context) {
-                return $object;
-            },
-        ];
-
-        $normalizer = new ObjectNormalizer(null, null, null, null, null, null, $defaultContext);
-
-        $serializer = new Serializer([$normalizer], [$encoders]);
-        $data = $serializer->serialize([$object, $dt], 'json', [AbstractNormalizer::ATTRIBUTES => [
-            'id',
-            'email',
-            'name',
-        ]]);
-
-
-        return new Response($data);
+        return new JsonResponse([
+            "status" => "200"
+        ]);
     }
 }
