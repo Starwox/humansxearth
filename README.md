@@ -81,6 +81,20 @@ J'aimerais remplacer le Controller insérant les datas par des [Commandes](https
 
 Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre appel AJAX
 
+
+[Test API](https://radiant-anchorage-47441.herokuapp.com/json/test) / Method: GET
+
+*Lien : https://radiant-anchorage-47441.herokuapp.com/json/test*
+
+```json
+{
+    "status"           : "200"
+}
+```
+  
+-----
+
+
 [Register](https://radiant-anchorage-47441.herokuapp.com/json/register) / Method: POST
 
 *Lien : https://radiant-anchorage-47441.herokuapp.com/json/register*
