@@ -394,6 +394,13 @@ class JsonController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
         $object = $repository->find($id);
 
+        if (empty($object)) {
+            return new JsonResponse([
+                "success" => "no",
+                "reason" => "User doesn't match"
+            ]);
+        }
+
         $dt = $object->getCreatedAt()->format('Y-m-d H:i:s');
 
 

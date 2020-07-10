@@ -300,3 +300,34 @@ Cela signifie que l'ID User et/ou l'ID Step n'ont pas été trouvé(s).
 
 Cela signifie que l'ID User et l'ID Step à déjà été implementé.
 
+ 
+ 
+-----
+
+[Get Step User](https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/challenge/getter*
+
+```json
+{
+"success"      : "no",
+"reason"       : "User doesn't match"
+}
+```
+
+ 
+-----
+
+[Get User by ID](https://radiant-anchorage-47441.herokuapp.com/json/user) / Method: POST
+
+*Lien: https://radiant-anchorage-47441.herokuapp.com/json/user*
+
+```json
+{
+"success"      : "no",
+"reason"       : "User doesn't match"
+}
+```
+
+ 
+-----
