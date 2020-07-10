@@ -69,11 +69,6 @@ Une fois l'hébergeur trouvé, donc dans mon cas Heroku, j'ai inséré de vrai d
 
 J'ai donc crée par la suite un nouveau Controller pour envoyer du JSON.
 
-**La suite :**
-
-J'aimerais remplacer le Controller insérant les datas par des [Commandes](https://symfony.com/doc/current/console.html) (Documentation Symfony)
-
-
 
 ## <a name="route"></a> Les routes de l'API (Exemple)
 
@@ -352,3 +347,4 @@ Cela signifie que l'ID User et l'ID Step à déjà été implementé.
 - PhpUnit
 - Gestion d'erreur plus précise
 - Erreur 500 Apache à gérer
+- Ajout des données par commandes Symfony
