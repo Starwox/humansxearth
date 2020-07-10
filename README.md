@@ -91,13 +91,8 @@ Concernant les "**Datas**" à envoyer, il faut les envoyer dans le body de votre
     "success"           : "yes",
     "id"                : 41,
     "email"             : "admin3@gmail.com",
-    "password"          : "betatester",
     "name"              : "Test admin",
-    "created_at"        : {
-        "date"          : "2020-07-07 22:06:06.817863",
-        "timezone_type" : 3,
-        "timezone"      : "UTC"
-    }
+    "created_at"        : "2020-07-07-22:06:06"
 }
 ```
   
