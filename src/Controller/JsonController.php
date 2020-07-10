@@ -264,7 +264,10 @@ class JsonController extends AbstractController
             array_push($stepValid, $value->getId());
 
             dump(in_array($value->getId(), $stepValid, true));
+            dump($value->getId());
+            dump($stepValid);
         }
+
 
         if (in_array($value->getId(), $stepValid, true)) {
             return new JsonResponse([
