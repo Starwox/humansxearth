@@ -342,3 +342,13 @@ Cela signifie que l'ID User et l'ID Step à déjà été implementé.
 "reason"       : "User doesn't match"
 }
 ```
+
+ 
+----
+
+## TODO List
+
+- Ajout du API_KEY
+- PhpUnit
+- Gestion d'erreur plus précise
+- Erreur 500 Apache à gérer
